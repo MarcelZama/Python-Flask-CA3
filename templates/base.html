@@ -1,13 +1,24 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>{{ title }}</title>
         <link rel="stylesheet" href="/static/webapp.css">
-        <!-- <link rel="stylesheet" type="text/css" href="{% static "css/site.css" %}"> -->
+
     </head>
 
     <body>
+        <div class='parent'>    
+            <div class='child1' style="margin-left:5px">
+            " <a href="/home" style="font-size: 30px;text-align: left;margin:50px">{{ title }}</a>"
+            </div>
+        
+            <div class='child2' style="margin-right:5px">
+            <a href="/info" style="text-align: right;">Personal Information</a>
+            <a href="/hobbies" style="text-align: right;">My hobbies</a>
+            <a href="/cv" style="text-align: right;">CV</a>
+            <a href="/tehnologies" style="text-align: right;">Technologies I love</a>
+            </div>
+        </div>
 
         {% block body %}
         {% endblock %}

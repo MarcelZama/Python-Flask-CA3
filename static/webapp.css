@@ -13,3 +13,27 @@ a {
     text-align: right;
     font-size: 30px;
 } */
+.parent {
+    border: 1px solid black;
+    margin: 1rem;
+    /* padding: 2rem 2rem;
+    text-align: center; */
+  }
+  .child1 {
+    float:left;
+    margin-left: 5%;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    margin-left: 5%;
+    border-bottom: 1px solid black;
+
+  }
+  .child2 {
+    float:right;
+    margin-right: 5%;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    /* margin-left: 30%;  */
+    margin-right: 5%;
+    border-bottom: 1px solid black;
+  }

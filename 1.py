@@ -10,25 +10,25 @@ app.secret_key = (
 def homepage():
     return render_template("index.html",title="Marcel Project")
 
+@app.route("/home")
+def home():
+    return render_template("index.html",title="Marcel Project")
+
 @app.route("/info")
 def info():
-    return
-    # return render_template("index.html",title="Marcel Project")
+    return render_template("info.html",title="Marcel Project")
 
 @app.route("/hobbies")
 def hobbies():
-    return
-    # return render_template("index.html",title="Marcel Project")
+    return render_template("hobbies.html",title="Marcel Project")
 
 @app.route("/cv")
 def cv():
-    return
-    # return render_template("index.html",title="Marcel Project")
+    return render_template("cv.html",title="Marcel Project")
 
 @app.route("/tehnologies")
 def tehnologies():
-    return
-    # return render_template("index.html",title="Marcel Project")
+    return render_template("tehnologies.html",title="Marcel Project")
 
 if __name__ == "__main__":
     app.debug = True
