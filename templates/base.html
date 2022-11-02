@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/static/webapp.css">
+        <!-- <link rel="stylesheet" type="text/css" href="{% static "css/site.css" %}"> -->
+    </head>
+
+    <body>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>
