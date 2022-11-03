@@ -30,6 +30,22 @@ def cv():
 def tehnologies():
     return render_template("tehnologies.html",title="Marcel Project")
 
+
+
+@app.route("/tehno1")
+def tehno1():
+    return render_template("tehno1.html",title="Marcel Project")
+
+@app.route("/tehno2")
+def tehno2():
+    return render_template("tehno2.html",title="Marcel Project")
+
+@app.route("/tehno3")
+def tehno3():
+    return render_template("tehno3.html",title="Marcel Project")
+
+
+
 if __name__ == "__main__":
     app.debug = True
     app.run()
